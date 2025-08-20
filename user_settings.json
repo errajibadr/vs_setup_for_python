@@ -1,0 +1,118 @@
+{
+  "launch": {
+    "configurations": []
+  },
+
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.renderWhitespace": "none",
+  "editor.wordWrapColumn": 200,
+  "editor.wordWrap": "off",
+  "editor.defaultFoldingRangeProvider": "charliermarsh.ruff",
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "charliermarsh.ruff",
+  "ruff.lineLength": 100,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.minimap.size": "fit",
+
+  "python.defaultInterpreterPath": "/usr/local/bin/python3",
+  "python.autoComplete.extraPaths": ["${workspaceFolder}"],
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.importFormat": "absolute",
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "debugpy.debugJustMyCode": false,
+  "debug.inlineValues": "on",
+
+  "[python]": {
+    "editor.wordBasedSuggestions": "matchingDocuments",
+    "editor.rulers": [140],
+    "editor.autoIndent": "advanced",
+    "editor.formatOnType": true,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 200,
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+
+  "html.format.extraLiners": "",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "aws.telemetry": false,
+
+  "explorer.confirmDelete": false,
+
+  "prettier.printWidth": 200,
+  "workbench.settings.applyToAllProfiles": ["prettier.printWidth"],
+
+  "files.exclude": {
+    ".pytest_cache": true,
+    ".ruff_cache": true,
+    "**.egg-info": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/**.egg-info": true
+  },
+
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+
+  "remote.autoForwardPortsSource": "hybrid",
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "cursor.cmdk.autoSelect": false,
+  "cursor.cpp.disabledLanguages": ["plaintext"],
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.composer.shouldAllowCustomModes": true,
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "workbench.iconTheme": "material-icon-theme",
+  "markdown-pdf.displayHeaderFooter": false,
+  "excalidraw.theme": "light",
+
+  "dart.flutterSdkPath": "/Users/badrou/flutter",
+  "dart.debugSdkLibraries": false,
+  "dart.debugExternalPackageLibraries": false,
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    },
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "cursorpyright.analysis.autoImportCompletions": true,
+  "cursorpyright.analysis.extraPaths": ["${workspaceFolder}"],
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "databricks.experiments.optInto": ["views.workspace", "views.cluster"]
+}
