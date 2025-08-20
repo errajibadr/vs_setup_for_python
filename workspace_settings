@@ -1,0 +1,106 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.analysis.extraPaths": ["${workspaceFolder}/app"],
+    "python.terminal.executeInFileDir": false,
+    "terminal.integrated.env.osx": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.linux": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.windows": {
+      "PYTHONPATH": "${workspaceFolder}"
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.testing.pytestArgs": ["tests"],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "charliermarsh.ruff",
+      "ms-python.vscode-pylance",
+      "ms-python.black-formatter",
+      "ms-python.isort",
+      "donjayamanne.python-extension-pack",
+      "anysphere.pyright",
+      "ms-python.isort",
+      "littlefoxteam.vscode-python-test-adapter",
+      "KevinRose.vsc-python-indent",
+      "njpwerner.autodocstring",
+      "ms-toolsai.jupyter",
+      "ms-toolsai.vscode-jupyter-cell-tags",
+      "GitHub.vscode-pull-request-github",
+      "github.vscode-github-actions",
+      "eamodio.gitlens",
+      "ms-vscode-remote.remote-containers",
+      "ms-azuretools.vscode-docker",
+      "amazonwebservices.aws-toolkit-vscode",
+      "christian-kohler.path-intellisense",
+      "qbik.markdown-command-runner-fork",
+      "tomoki1207.pdf",
+      "bierner.markdown-mermaid",
+      "yzane.markdown-pdf",
+      "Tyriar.luna-paint",
+      "janisdd.vscode-edit-csv",
+      "mechatroner.rainbow-csv",
+      "hashicorp.terraform",
+      "bungcip.better-toml",
+      "pomdtr.excalidraw-editor",
+      "James-Yu.latex-workshop",
+      "ms-vscode.live-server",
+      "akamud.vscode-theme-onedark",
+      "PKief.material-icon-theme"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Local: Run example task",
+        "type": "shell",
+        "command": "uv",
+        "args": ["run", "python", "example.py","${input:eventFile}"],
+        "presentation": {
+          "echo": true,
+          "reveal": "always",
+          "focus": false,
+          "panel": "shared",
+          "showReuseMessage": true,
+          "clear": false
+        },
+        "runOptions": {
+          "runOn": "default"
+        },
+        "problemMatcher": [],
+        "detail": "Run the workflow playground to test workflows"
+      },
+    ],
+    "inputs": [
+      {
+        "id": "eventFile",
+        "type": "promptString",
+        "description": "JSON event file to send (located in requests/events)",
+        "default": "chat_event.json"
+      }
+    ]
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Python Debugger: Current File",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+}
